@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <style>
+        body{
+            background-color:wheat;
+            text-align: center;
+
+
+        }
+        form{
+            background-color: #2b7de2;
+            text-align: center;
+            padding: 20px 12px;
+            margin: auto;
+            text-decoration: #fff;
+            font-family: "Droid Sans";
+            box-sizing: border-box;
+            width: 50%;
+            height: 50%;
+        }
+        label{
+            padding: 20px 20px 20px 0;
+            display: inline-block;
+        }
+        input{
+            padding: 20px;
+            margin: 20px;
+            background-color: wheat;
+        }
+        textarea{
+            border: black;
+            box-sizing: border-box;
+            background-color: wheat;
+        }
+
+    </style>
+</head>
+<body>
+<h2>student registration form</h2>
+<form autocomplete="on" action="links.html" method="get">
+    <fieldset>
+        <legend>personal information </legend>
+  <label for="fname">first name</label><br>
+  <input type="text" id="fname" placeholder="first name"><br>
+
+  <label for="sname">last name</label><br>
+  <input type="text" id="sname" placeholder="last name"><br>
+
+    <label for="mgender">male</label>
+    <input type="radio" id="mgender" name="gender" value="male">
+
+    <label for="fgender">female</label>
+    <input type="radio" id="fgender" name="gender" value="female"><br>
+
+  <label for="email">email address</label><br>
+  <input type="text" id="email" placeholder="email"><br>
+
+    <label for="password">password</label><br>
+    <input type="password" id="password" placeholder="enter password "><br>
+
+    <label for="dob">date of birth</label>
+    <input type="date" id="dob" ><br>
+
+
+    <p>message</p>
+    <textarea name="message" id="" cols="60" rows="20" placeholder="message"></textarea><br>
+
+    <label for="courses">courses</label>
+    <select name="course" id="courses">
+        <option value="mit">mit</option>
+        <option value="html">html</option>
+        <option value="laravel">laravel</option>
+        <option value="js">js</option>
+        <option value="python">python</option>
+        <option value="react">react</option>
+        <option value="R">R</option>
+
+    </select><br>
+
+    <p>choose which class to attend</p>
+    <label for="morning">morning</label>
+    <input type="checkbox" id="morning" name="class" value="morning"><br>
+
+    <label for="evening">evening</label>
+    <input type="checkbox" id="evening" name="class" value="evening"><br>
+
+    <label for="online">online</label>
+    <input type="checkbox" id="online" name="class" value="online"><br>
+
+
+
+    <input type="submit" value="register here"><br>
+
+    <button type="button" onclick="alert('karibu javascript')">bonyeza</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
